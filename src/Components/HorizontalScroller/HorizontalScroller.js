@@ -55,7 +55,7 @@ function HorizontalScroller() {
         document.body.style.background = "#fff";
 
         if (containerRef.current) containerRef.current.style.overflowX = "clip";
-      } else document.body.style.background = "yellow";
+      } else document.body.style.background = "#FCEB4E";
       return;
     }
 
@@ -68,7 +68,7 @@ function HorizontalScroller() {
     // else if (scrolled < 30 || scrolled > 67)
     //   document.body.style.background = "#ffff70";
     // else
-    document.body.style.background = "yellow";
+    document.body.style.background = "#FCEB4E";
 
     if (scrolled > 90) document.body.style.background = "#fff";
 

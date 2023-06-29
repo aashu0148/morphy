@@ -25,13 +25,13 @@ function About({
     if (top > 0) {
       if (top > 350 && top < 500) {
         document.body.style.background = "#fff";
-      } else if (top < 350) document.body.style.background = "yellow";
+      } else if (top < 350) document.body.style.background = "#FCEB4E";
       return;
     }
 
     const scrolled = (Math.abs(top) / height) * 100;
 
-    document.body.style.background = "yellow";
+    document.body.style.background = "#FCEB4E";
 
     if (scrolled > 50) document.body.style.background = "#fff";
   };

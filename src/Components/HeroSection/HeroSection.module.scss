@@ -21,8 +21,8 @@
       gap: 30px;
 
       .heading {
-        font-size: 46px;
-        line-height: 55px;
+        font-size: 72px;
+        line-height: 85px;
         max-width: 660px;
         font-weight: 700;
 
@@ -30,12 +30,26 @@
           font: inherit;
           font-weight: 400;
         }
+
+        .underline {
+          margin-left: auto;
+          position: relative;
+          width: fit-content;
+
+          img,
+          svg {
+            max-width: 100%;
+            position: absolute;
+            bottom: -20px;
+            right: -10px;
+          }
+        }
       }
     }
 
     .right {
       .image {
-        width: 700px;
+        width: 600px;
 
         img {
           height: 100%;
