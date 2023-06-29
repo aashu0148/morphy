@@ -1,0 +1,54 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  .heading {
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .card {
+      width: 440px;
+      max-width: 100%;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .image {
+        width: 100%;
+        height: 530px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+      }
+
+      .desc {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+}

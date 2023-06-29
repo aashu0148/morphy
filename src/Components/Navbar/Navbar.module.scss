@@ -1,0 +1,27 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+
+  .logo {
+    p {
+      font-size: 28px;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+}

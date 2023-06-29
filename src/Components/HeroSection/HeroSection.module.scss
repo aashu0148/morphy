@@ -1,0 +1,47 @@
+@import "styles/variables";
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .heading {
+        font-size: 65px;
+        max-width: 660px;
+        font-weight: 700;
+
+        span {
+          font: inherit;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .right {
+      .image {
+        width: 400px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
