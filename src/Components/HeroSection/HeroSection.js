@@ -19,11 +19,8 @@ function HeroSection() {
           </div>
 
           <div className={styles.right}>
-            <div className={styles.image}>
-              <img
-                src="https://assets.website-files.com/613f528b6c338d2716ac8cbd/6143214cdc0c03491ef95f8d_photo-4-p-800.jpeg"
-                alt="Morphy"
-              />
+            <div className={`${styles.floating} ${styles.image}`}>
+              <img src="/astronaut.png" alt="Morphy" />
             </div>
           </div>
         </div>

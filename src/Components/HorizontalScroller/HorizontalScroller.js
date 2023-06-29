@@ -49,17 +49,26 @@ function HorizontalScroller() {
     const height = dimensions.height;
 
     if (top > 0) {
-      document.body.style.background = "#fff";
+      if (top > 200) containerRef.current.style.overflowX = "visible";
+
+      if (top > 400) {
+        document.body.style.background = "#fff";
+
+        if (containerRef.current) containerRef.current.style.overflowX = "clip";
+      } else document.body.style.background = "yellow";
       return;
     }
 
+    containerRef.current.style.overflowX = "visible";
+
     const scrolled = (Math.abs(top) / height) * 100;
 
-    if (scrolled < 10 || scrolled > 74)
-      document.body.style.background = "#ffffbf";
-    else if (scrolled < 30 || scrolled > 67)
-      document.body.style.background = "#ffff70";
-    else document.body.style.background = "yellow";
+    // if (scrolled < 10 || scrolled > 74)
+    // document.body.style.background = "#ffffbf";
+    // else if (scrolled < 30 || scrolled > 67)
+    //   document.body.style.background = "#ffff70";
+    // else
+    document.body.style.background = "yellow";
 
     if (scrolled > 90) document.body.style.background = "#fff";
 
@@ -80,7 +89,7 @@ function HorizontalScroller() {
 
   return (
     <div className={styles.container} ref={containerRef}>
-      <p className={styles.heading}>Our Approach</p>
+      <p className={styles.heading}>OUR APPROACH</p>
 
       <div className={styles.scroller} ref={scrollerRef}>
         <div className={styles.cards} ref={cardsRef}>

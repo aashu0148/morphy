@@ -36,7 +36,7 @@ function GetInTouch() {
       ref={containerRef}
     >
       <div className={styles.spaceship} ref={spaceship}>
-        🚀
+        <div className={styles.inner}>🚀</div>
       </div>
 
       <p className={styles.heading}>

@@ -21,23 +21,43 @@
     z-index: -1;
   }
 
+  @keyframes floating {
+    0% {
+      transform: translate(5px, -10px);
+    }
+
+    50% {
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      transform: translate(5px, -10px);
+    }
+  }
+
   .spaceship {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 40px;
-    background-color: #000;
     position: absolute;
     top: 10px;
     left: 10px;
     transform: translate(-30px, -30px) scale(0);
     transition: transform 500ms;
+
+    .inner {
+      padding: 20px;
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 40px;
+      background-color: #000;
+      animation: floating linear infinite 2s forwards;
+    }
   }
 
   .heading {
-    font-size: 120px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
