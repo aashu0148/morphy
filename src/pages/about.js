@@ -29,7 +29,6 @@ function AboutPage() {
             "Our clients will tell you we are the smartest people they’ve worked with. We are a team of technologists from IBM & IIT, design thinkers from IDEO & Bacardi, business leaders and founders from IIM, Harvard & INSEAD, creatives from Ogilvy & Dentsu - so they are not wrong. ",
             "But it doesn’t capture who we really are.",
           ]}
-          heading="Welcome"
         />
         <About
           flip
@@ -41,10 +40,6 @@ function AboutPage() {
             "Belief 3: A deeply creative approach rooted in the principles of design thinking can unlock solutions to previously unsolvable problems. ",
           ]}
         />
-
-        <Products />
-
-        <GetInTouch />
         <br />
       </main>
     </>
